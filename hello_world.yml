@@ -1,5 +1,5 @@
 - name: Hello World Sample
   hosts: all
   roles:
-    - david.dep_test.my_role
+    - "david.dep_test.my_role"
 
