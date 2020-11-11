@@ -1,5 +1,12 @@
 - name: Hello World Sample
   hosts: all
-  roles:
-    - "david.dep_test.my_role"
+  # roles:
+  #   - "david.dep_test.my_role"
 
+  tasks:
+    - name: Gather some real Facts.
+      newswangerd.collection_demo.real_facts:
+        name: John Snow
+      register: testout
+    - debug:
+        msg: "{{ testout }}"
