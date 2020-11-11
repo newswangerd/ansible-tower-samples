@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: localhost
+  hosts: all
   # roles:
   #   - "david.dep_test.my_role"
 
