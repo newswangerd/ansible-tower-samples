@@ -4,10 +4,9 @@
   #   - "david.dep_test.my_role"
 
   tasks:
-    - ping:
-    # - name: Gather some real Facts.
-    #   newswangerd.collection_demo.real_facts:
-    #     name: John Snow
-    #   register: testout
-    # - debug:
-    #     msg: "{{ testout }}"
+    - name: Gather some real Facts.
+      newswangerd.collection_demo.real_facts:
+        name: John Snow
+      register: testout
+    - debug:
+        msg: "{{ testout }}"
