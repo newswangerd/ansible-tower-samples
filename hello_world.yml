@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: all
+  hosts: localhost
   # roles:
   #   - "david.dep_test.my_role"
 
@@ -8,5 +8,6 @@
       newswangerd.collection_demo.real_facts:
         name: John Snow
       register: testout
+
     - debug:
         msg: "{{ testout }}"
